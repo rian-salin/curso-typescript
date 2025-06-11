@@ -9,19 +9,23 @@ export class Negociacao {
     this.private_valor = valor;
   }
 
-  get data() {
+  get data(): Date {
+    //tipando o retorno da fanção
     return this.private_data;
   }
 
-  get quantidade() {
+  get quantidade(): number {
+    //tipando o retorno da fanção
     return this.private_quantidade;
   }
 
-  get valor() {
+  get valor(): number {
+    //tipando o retorno da fanção
     return this.private_valor;
   }
 
-  get volume() {
+  get volume(): number {
+    //tipando o retorno da fanção
     return this.private_quantidade * this.private_valor;
   }
 }
